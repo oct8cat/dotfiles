@@ -1,4 +1,5 @@
 {
+	"auto_upgrade": false,
 	"installed_packages":
 	[
 		"Alignment",
@@ -7,8 +8,10 @@
 		"EJS",
 		"Emmet",
 		"Git",
+		"Handlebars",
 		"HTML Mustache",
 		"Jade",
+		"Markdown Preview",
 		"Package Control",
 		"Terminal",
 		"Theme - Soda"
