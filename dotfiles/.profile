@@ -41,3 +41,6 @@
 
     # Gists
     alias 'cw'='curl --silent https://gist.github.com/oct8cat/4634063/raw | sh $0'
+
+# Local profile
+    [  -f ./profile.local ] && . ./.profile.local
