@@ -39,8 +39,5 @@
     alias 'wactouchon'='xsetwacom --set `xsetwacom list | grep touch | grep -oP id:\ [0-9]\+ | grep -oP [0-9]\+` Touch on'
     alias 'wactouchoff'='xsetwacom --set `xsetwacom list | grep touch | grep -oP id:\ [0-9]\+ | grep -oP [0-9]\+` Touch off'
 
-    # Gists
-    alias 'cw'='curl --silent https://gist.github.com/oct8cat/4634063/raw | sh $0'
-
 # Local profile
-    [  -f ./profile.local ] && . ./.profile.local
+    [ -f ~/.profile.local ] && . ~/.profile.local
