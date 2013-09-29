@@ -39,5 +39,9 @@
     alias 'wactouchon'='xsetwacom --set `xsetwacom list | grep touch | grep -oP id:\ [0-9]\+ | grep -oP [0-9]\+` Touch on'
     alias 'wactouchoff'='xsetwacom --set `xsetwacom list | grep touch | grep -oP id:\ [0-9]\+ | grep -oP [0-9]\+` Touch off'
 
+    # Mounts
+    alias 'mountn2o'='mkdir -p ~/NitrousIO && sshfs action@euw1.actionbox.io:workspace ~/NitrousIO -p 11903'
+    alias 'umountn2o'='fusermount -u ~/NitrousIO'
+
 # Local profile
     [ -f ~/.profile.local ] && . ~/.profile.local
