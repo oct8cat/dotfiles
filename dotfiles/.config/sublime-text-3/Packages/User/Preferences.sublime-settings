@@ -92,11 +92,11 @@
 		".hg",
 		"CVS"
 	],
-	"font_face": "Ubuntu Mono",
+	"font_face": "Inconsolata",
 	"font_options":
 	[
 	],
-	"font_size": 17,
+	"font_size": 16,
 	"gpu_window_buffer": "auto",
 	"gutter": true,
 	"highlight_line": false,
@@ -151,7 +151,7 @@
 	"tab_completion": true,
 	"tab_size": 4,
 	"theme": "Soda Dark 3.sublime-theme",
-	"translate_tabs_to_spaces": false,
+	"translate_tabs_to_spaces": true,
 	"tree_animation_enabled": true,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true,
