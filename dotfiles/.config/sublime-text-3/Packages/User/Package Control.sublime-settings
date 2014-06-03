@@ -1,0 +1,21 @@
+{
+	"auto_upgrade": false,
+	"installed_packages":
+	[
+		"Alignment",
+		"All Autocomplete",
+		"CoffeeScript",
+		"Emmet",
+		"Git",
+		"Handlebars",
+		"HTML Mustache",
+		"Jade",
+		"JSHint",
+		"Markdown Preview",
+		"Nettuts+ Fetch",
+		"Package Control",
+		"Terminal",
+		"Theme - Soda",
+		"Theme - Soda SolarizedDark"
+	]
+}
