@@ -5,7 +5,7 @@
 	"atomic_save": true,
 	"auto_close_tags": true,
 	"auto_complete": true,
-	"auto_complete_commit_on_tab": false,
+	"auto_complete_commit_on_tab": true,
 	"auto_complete_delay": 50,
 	"auto_complete_selector": "source - comment, meta.tag - punctuation.definition.tag.begin",
 	"auto_complete_size_limit": 4194304,
@@ -36,7 +36,7 @@
 		"*.jar",
 		"*.zip"
 	],
-	"bold_folder_labels": false,
+	"bold_folder_labels": true,
 	"caret_extra_bottom": 0,
 	"caret_extra_top": 0,
 	"caret_extra_width": 0,
@@ -57,7 +57,7 @@
 	"enable_hexadecimal_encoding": true,
 	"enable_tab_scrolling": true,
 	"enable_telemetry": "auto",
-	"ensure_newline_at_eof_on_save": false,
+	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": true,
 	"fallback_encoding": "Cyrillic (Windows 1251)",
 	"file_exclude_patterns":
