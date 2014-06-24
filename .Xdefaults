@@ -15,13 +15,14 @@ URxvt.geometry: 80x25
 URxvt.internalBorder: 0
 URxvt.jumpScroll: true
 URxvt.loginShell: true
-URxvt.perl-ext-common: default,matcher,searchable-scrollback
 URxvt.pointerBlank: true
 URxvt.saveLines: 4000
 URxvt.scrollBar: false
 URxvt.scrollTtyKeypress: true
 URxvt.scrollWithBuffer: true
 URxvt.secondaryScroll: true
+URxvt.perl-ext-common: default,matcher,searchable-scrollback,tabbedex
+URxvt.tabbed.autohide: true
 
 URxvt*color0: #000000
 URxvt*color1: #ff5555
