@@ -45,3 +45,7 @@
 
 # Local profile
     [ -f ~/.profile.local ] && . ~/.profile.local
+
+# NVM 
+    export NVM_DIR="/home/oct8cat/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

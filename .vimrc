@@ -1,3 +1,6 @@
+" Init pathogen
+execute pathogen#infect()
+
 " Filetype & Syntax
 syntax on
 filetype on
