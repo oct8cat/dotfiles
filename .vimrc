@@ -1,10 +1,9 @@
-" Init pathogen
-execute pathogen#infect()
+source ~/.vim/vundle.vim
 
 " Filetype & Syntax
-syntax on
-filetype on
 filetype plugin on
+filetype plugin indent on
+syntax on
 
 " Behavior
 set nocompatible
@@ -12,7 +11,6 @@ set backspace=indent,eol,start
 set whichwrap=<,>,[,]
 set incsearch
 set hlsearch
-set foldmethod=indent
 set noswapfile
 set nobackup
 
@@ -21,15 +19,25 @@ set mouse=a
 set mousehide
 
 " Appearance
-colorscheme zenburn
+if has('gui_running')
+    set guioptions-=r
+    set guioptions-=L
+    set guioptions-=m
+    set guioptions-=T
+    set guifont=Inconsolata\ Bold\ 13
+else
+    let g:solarized_termcolors=256
+endif
 set showtabline=2
-set noshowcmd
+set showcmd
 set showmode
 set number
 set ruler
 set nowrap
+set background=dark
+colorscheme solarized
 
-" Tabs & Indents
+" Intendation
 set autoindent
 set smartindent
 set expandtab
@@ -41,7 +49,9 @@ nnoremap <F5> :bprev<CR>
 nnoremap <F6> :bnext<CR>
 nnoremap <F7> :undo<CR>
 nnoremap <F8> :redo<CR>
-
-" NERD Tree
 map <F2> :NERDTreeToggle<CR>
 map <F3> :NERDTreeFromBookmark
+nmap :Q :q
+nmap :W :w
+
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS

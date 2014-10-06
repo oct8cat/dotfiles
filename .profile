@@ -34,13 +34,14 @@
     alias 'l'='ls -l'
     alias 'la'='ls -la'
     alias 'lar'='ls -laR'
+    alias 'getvundle'='mkdir -p ~/.vim/bundle && git clone https://github.com/gmarik/Vundle.vim ~/.vim/bundle/Vundle.vim'
 
     # Wacom
     alias 'wactouchon'='xsetwacom --set `xsetwacom list | grep touch | grep -oP id:\ [0-9]\+ | grep -oP [0-9]\+` Touch on'
     alias 'wactouchoff'='xsetwacom --set `xsetwacom list | grep touch | grep -oP id:\ [0-9]\+ | grep -oP [0-9]\+` Touch off'
 
     # Mounts
-    alias 'mountn2o'='mkdir -p ~/NitrousIO && sshfs action@euw1.actionbox.io:workspace ~/NitrousIO -p 11903'
+    alias 'mountn2o'='mkdir -p ~/NitrousIO && sshfs action@euw1.actionbox.io:workspace ~/NitrousIO -p 17355'
     alias 'umountn2o'='fusermount -u ~/NitrousIO'
 
 # Local profile
@@ -48,4 +49,4 @@
 
 # NVM 
     export NVM_DIR="/home/oct8cat/.nvm"
-    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
