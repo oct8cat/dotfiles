@@ -287,11 +287,14 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey }, "p", function() menubar.show() end),
 
     -- Multimedia keys
-    awful.key({ }, "XF86AudioRaiseVolume", function () awful.util.spawn("amixer set Master 2+") end),
-    awful.key({ }, "XF86AudioLowerVolume", function () awful.util.spawn("amixer set Master 2-") end)
+    awful.key({ },           "XF86AudioRaiseVolume", function () awful.util.spawn("amixer set Master 2+") end),
+    awful.key({ },           "XF86AudioLowerVolume", function () awful.util.spawn("amixer set Master 2-") end),
+    awful.key({ },           "XF86AudioMute",        function () awful.util.spawn("amixer sset Master toggle") end),
+    awful.key({ "Control" }, "XF86AudioMute",        function () awful.util.spawn("killall mplayer") end)
 )
 
 clientkeys = awful.util.table.join(
+    awful.key({ modkey,           }, "t", awful.titlebar.toggle),
     awful.key({ modkey,           }, "f",      function (c) c.fullscreen = not c.fullscreen  end),
     awful.key({ modkey, "Shift"   }, "c",      function (c) c:kill()                         end),
     awful.key({ modkey, "Control" }, "space",  awful.client.floating.toggle                     ),
@@ -370,8 +373,7 @@ awful.rules.rules = {
                      buttons = clientbuttons } },
     -- }}}
     --Firefox {{{
-    { rule = { class = "Firefox" },
-      properties = { tag = tags[1][2] } },
+    { rule = { class = "Firefox" }, properties = { tag = tags[1][2] }, callback = awful.titlebar.add },
     --}}}
     --Chromium {{{
     { rule = { class = "Chromium" },
@@ -428,7 +430,7 @@ client.connect_signal("manage", function (c, startup)
     end
 
     local titlebars_enabled = false
-    if titlebars_enabled and (c.type == "normal" or c.type == "dialog") then
+    if c.type == "dialog" or (titlebars_enabled and c.type == "normal") then
         -- Widgets that are aligned to the left
         local left_layout = wibox.layout.fixed.horizontal()
         left_layout:add(awful.titlebar.widget.iconwidget(c))
