@@ -12,5 +12,7 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-scripts/Align'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'xolox/vim-lua-ftplugin' 
 
 call vundle#end()
