@@ -289,8 +289,14 @@ globalkeys = awful.util.table.join(
     -- Multimedia keys
     awful.key({ },           "XF86AudioRaiseVolume", function () awful.util.spawn("amixer set Master 2+") end),
     awful.key({ },           "XF86AudioLowerVolume", function () awful.util.spawn("amixer set Master 2-") end),
-    awful.key({ },           "XF86AudioMute",        function () awful.util.spawn("amixer sset Master toggle") end),
-    awful.key({ "Control" }, "XF86AudioMute",        function () awful.util.spawn("killall mplayer") end)
+    awful.key({ },           "XF86AudioMute",        function () awful.util.spawn("amixer set Master toggle") end),
+    awful.key({ "Control" }, "XF86AudioMute",        function () awful.util.spawn("killall mplayer") end),
+
+    -- Multimedia keys (Razer Deathstalker compat)
+    awful.key({ modkey },    "F3",                   function () awful.util.spawn("amixer set Master 2+") end),
+    awful.key({ modkey },    "F2",                   function () awful.util.spawn("amixer set Master 2-") end),
+    awful.key({ modkey },    "F1",                   function () awful.util.spawn("amixer set Master toggle") end),
+    awful.key({ modkey, "Control" }, "F1",           function () awful.util.spawn("killall mplayer") end)
 )
 
 clientkeys = awful.util.table.join(
@@ -372,17 +378,6 @@ awful.rules.rules = {
                      keys = clientkeys,
                      buttons = clientbuttons } },
     -- }}}
-    --Firefox {{{
-    { rule = { class = "Firefox" }, properties = { tag = tags[1][2] }, callback = awful.titlebar.add },
-    --}}}
-    --Chromium {{{
-    { rule = { class = "Chromium" },
-      properties = { tag = tags[1][2] } },
-    --}}}
-    --Google Chrome {{{
-    { rule = { class = "Google-chrome" },
-      properties = { tag = tags[1][2] } },
-    --}}}
     --Pidgin {{{
     { rule = { class = "Pidgin" },
       properties = { tag = tags[1][3] } },
