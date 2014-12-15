@@ -10,7 +10,7 @@ URxvt*cursorColor: magenta
 URxvt*foreground: Wheat
 URxvt*underlineColor: #c5f779
 URxvt*urlLauncher: /usr/bin/firefox
-URxvt.font: xft:Ubuntu Mono:size=12
+URxvt.font: xft:Inconsolata\ LGC:size=10
 URxvt.geometry: 80x25
 URxvt.internalBorder: 0
 URxvt.jumpScroll: true
