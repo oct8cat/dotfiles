@@ -4,15 +4,19 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/Vundle.vim'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'Raimondi/delimitMate'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'pangloss/vim-javascript'
-Plugin 'scrooloose/nerdtree'
-Plugin 'vim-scripts/Align'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'xolox/vim-lua-ftplugin' 
+Bundle 'gmarik/Vundle.vim'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'Raimondi/delimitMate'
+" Bundle 'Valloric/YouCompleteMe'
+Bundle 'jelera/vim-javascript-syntax'
+Bundle 'pangloss/vim-javascript'
+Bundle 'scrooloose/nerdtree'
+Bundle 'vim-scripts/Align'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'digitaltoad/vim-jade'
+Bundle 'marcweber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'garbas/vim-snipmate'
+Bundle 'fholgado/minibufexpl.vim'
 
 call vundle#end()
