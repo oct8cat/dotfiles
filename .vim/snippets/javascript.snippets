@@ -1,11 +1,11 @@
 snippet fi Inline function.
-	function(${1}) { ${0} }
+	function (${1}) { ${0} }
 snippet fm Multiline function.
-	function(${1}) {
+	function (${1}) {
 		${0}
 	}
 snippet cb Callback function.
-	function(err, ${1:data}) {
+	function (err, ${1:data}) {
 		if (err) { ${2:cb}(err); return }
 		${0}
 	}
@@ -16,7 +16,7 @@ snippet ifm Multiline "if".
 		${0}
 	}
 snippet def RequireJS module definition.
-	define(['${1}'], function(${2}) { 'use strict';
+	define(['${1}'], function (${2}) { 'use strict';
 		${0}
 	})
 snippet sch Mongoose schema definition.

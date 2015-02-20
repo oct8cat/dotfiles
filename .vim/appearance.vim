@@ -3,7 +3,7 @@ if has('gui_running')
     set guioptions-=L
     set guioptions-=m
     set guioptions-=T
-    set guifont=Inconsolata\ Bold\ 13
+    set guifont=Ubuntu\ Mono\ 11
 else
     let g:solarized_termcolors=256
 endif
