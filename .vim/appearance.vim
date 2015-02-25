@@ -3,9 +3,7 @@ if has('gui_running')
     set guioptions-=L
     set guioptions-=m
     set guioptions-=T
-    set guifont=Ubuntu\ Mono\ 11
-else
-    let g:solarized_termcolors=256
+    set guifont=Ubuntu\ Mono\ 12
 endif
 set showtabline=2
 set showcmd
