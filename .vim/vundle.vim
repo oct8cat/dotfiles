@@ -10,7 +10,6 @@ Bundle 'marcweber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 
 Bundle 'Raimondi/delimitMate'
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'garbas/vim-snipmate'
@@ -20,7 +19,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
-
 Bundle 'bling/vim-airline'
+Bundle 'chriskempson/base16-vim'
 
 call vundle#end()
