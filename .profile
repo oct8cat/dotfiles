@@ -44,9 +44,16 @@
     alias 'mountn2o'='mkdir -p ~/NitrousIO && sshfs action@euw1.actionbox.io:workspace ~/NitrousIO -p 17355'
     alias 'umountn2o'='fusermount -u ~/NitrousIO'
 
+    # Audio
+    alias 'snd_default'='rm ~/.asoundrc'
+    alias 'snd_headset'='echo \
+        pcm.\!default { type hw\; card $(aplay -l | grep HEADSET | grep -oP card\\s+\\d+: | grep -oP \\d+) } \
+        ctl.\!default { type hw\; card $(aplay -l | grep HEADSET | grep -oP card\\s+\\d+: | grep -oP \\d+) } \
+        > ~/.asoundrc'
+
 # Local profile
     [ -f ~/.profile.local ] && . ~/.profile.local
 
-# NVM 
+# NVM
     export NVM_DIR="/home/oct8cat/.nvm"
     [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
