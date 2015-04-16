@@ -1,23 +1,22 @@
 [[ $- != *i* ]] && return
 
 # Prompt
-    PS1='\W $ '
+    GIT_PROMPT=/usr/share/git/completion/git-prompt.sh
+    if [ -f $GIT_PROMPT ]; then
+        . $GIT_PROMPT
+        GIT_PS1_SHOWDIRTYSTATE=true
+        GIT_PS1_SHOWUNTRACKEDFILES=true
+        PS1='\W$(__git_ps1 " (%s)") $ '
+    else
+        PS1='\W $ '
+    fi
     PS2='> '
     PS3='> '
     PS4='+ '
 
-    case ${TERM} in
-      xterm*|rxvt*|Eterm|aterm|kterm|gnome*)
-        PROMPT_COMMAND=${PROMPT_COMMAND:+$PROMPT_COMMAND; }'printf "\033]0;%s@%s:%s\007" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/~}"'
-
-        ;;
-      screen)
-        PROMPT_COMMAND=${PROMPT_COMMAND:+$PROMPT_COMMAND; }'printf "\033_%s@%s:%s\033\\" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/~}"'
-        ;;
-    esac
-
 # Completion
-    [ -r /etc/bash_completion   ] && . /etc/bash_completion
+    BASH_COMPLETION=/etc/bash_completion
+    [ -r $BASH_COMPLETION ] && . $BASH_COMPLETION
 
 # Exports
     export LANG=en_US.UTF-8
@@ -35,6 +34,7 @@
     alias 'la'='ls -la'
     alias 'lar'='ls -laR'
     alias 'getvundle'='mkdir -p ~/.vim/bundle && git clone https://github.com/gmarik/Vundle.vim ~/.vim/bundle/Vundle.vim'
+    alias 'fixkb'='setxkbmap -layout "us,ru" -option "grp: alt_shift_toglge"'
 
     # Wacom
     alias 'wactouchon'='xsetwacom --set `xsetwacom list | grep touch | grep -oP id:\ [0-9]\+ | grep -oP [0-9]\+` Touch on'

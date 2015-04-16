@@ -3,9 +3,9 @@ if has('gui_running')
     set guioptions-=L
     set guioptions-=m
     set guioptions-=T
-    set guifont=Monaco\ 11
+    set guifont=Ubuntu\ Mono\ 12
 endif
-set showtabline=2
+set showtabline=1
 set showcmd
 set showmode
 set number
