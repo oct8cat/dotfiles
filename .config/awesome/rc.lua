@@ -162,16 +162,16 @@ mytasklist.buttons = awful.util.table.join(
                                           end))
 
 -- Battery
-batterywidget = wibox.widget.textbox()
-batterywidgettimer = timer({ timeout = 60 })
-function onTimeout()
-    fh = assert(io.popen("acpi | grep -o '[0-9]\\+%'", "r"))
-    batterywidget:set_text("| Bat: " .. fh:read("*l") .. " ")
-    fh:close()
-end
-onTimeout()
-batterywidgettimer:connect_signal("timeout", onTimeout)
-batterywidgettimer:start()
+--batterywidget = wibox.widget.textbox()
+--batterywidgettimer = timer({ timeout = 60 })
+--function onTimeout()
+    --fh = assert(io.popen("acpi | grep -o '[0-9]\\+%'", "r"))
+    --batterywidget:set_text("| Bat: " .. fh:read("*l") .. " ")
+    --fh:close()
+--end
+--onTimeout()
+--batterywidgettimer:connect_signal("timeout", onTimeout)
+--batterywidgettimer:start()
 
 for s = 1, screen.count() do
     -- Create a promptbox for each screen
@@ -203,7 +203,7 @@ for s = 1, screen.count() do
     local right_layout = wibox.layout.fixed.horizontal()
     if s == 1 then right_layout:add(wibox.widget.systray()) end
     right_layout:add(mytextclock)
-    right_layout:add(batterywidget)
+    --right_layout:add(batterywidget)
     right_layout:add(mylayoutbox[s])
 
     -- Now bring it all together (with the tasklist in the middle)
