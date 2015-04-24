@@ -34,7 +34,7 @@
     alias 'la'='ls -la'
     alias 'lar'='ls -laR'
     alias 'getvundle'='mkdir -p ~/.vim/bundle && git clone https://github.com/gmarik/Vundle.vim ~/.vim/bundle/Vundle.vim'
-    alias 'fixkb'='setxkbmap -layout "us,ru" -option "grp: alt_shift_toglge"'
+    alias 'fixkb'='setxkbmap -layout "us,ru" -option "grp:alt_shift_toggle"'
 
     # Wacom
     alias 'wactouchon'='xsetwacom --set `xsetwacom list | grep touch | grep -oP id:\ [0-9]\+ | grep -oP [0-9]\+` Touch on'
