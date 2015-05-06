@@ -8,3 +8,4 @@ set nobackup
 set mouse=a
 set mousehide
 set foldmethod=indent
+set eol

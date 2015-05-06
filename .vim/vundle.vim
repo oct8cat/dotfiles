@@ -21,5 +21,9 @@ Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
 Bundle 'bling/vim-airline'
 Bundle 'chriskempson/base16-vim'
+Bundle 'mattn/emmet-vim'
+Bundle 'kien/ctrlp.vim'
+
+let g:airline_powerline_fonts = 1
 
 call vundle#end()
