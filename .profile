@@ -50,6 +50,15 @@
         pcm.\!default { type hw\; card $(aplay -l | grep HEADSET | grep -oP card\\s+\\d+: | grep -oP \\d+) } \
         ctl.\!default { type hw\; card $(aplay -l | grep HEADSET | grep -oP card\\s+\\d+: | grep -oP \\d+) } \
         > ~/.asoundrc'
+    # Git
+    alias 'gs'='git status -bs'
+    alias 'gl'='git log --oneline'
+    alias 'gpr'='git pull --rebase'
+    alias 'gd'='git diff'
+    alias 'gdc'='git diff --cached'
+    alias 'gc'='git commit'
+    alias 'gca'='git commit --amend'
+
 
 # Local profile
     [ -f ~/.profile.local ] && . ~/.profile.local
