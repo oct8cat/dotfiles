@@ -23,6 +23,7 @@ Bundle 'bling/vim-airline'
 Bundle 'chriskempson/base16-vim'
 Bundle 'mattn/emmet-vim'
 Bundle 'kien/ctrlp.vim'
+Bundle 'diepm/vim-rest-console'
 
 let g:airline_powerline_fonts = 1
 
