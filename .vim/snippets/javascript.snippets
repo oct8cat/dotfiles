@@ -25,3 +25,11 @@ snippet sch Mongoose schema definition.
 	})
 snippet scf Mongoose schema field definition.
 	${1:field}: {type: '${2:String}'${3:, required: true}},${0}
+snippet mdesc Mocha `describe`
+	describe('${1:Feature}', function () {
+		${0}
+	})
+snippet mit Mocha `it`
+	it('Should ${1:work}.', function (${2}) {
+		${0}
+	})
