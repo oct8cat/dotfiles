@@ -1,0 +1,6 @@
+#!/usr/bin/sh
+
+set -e
+
+mkdir -p ~/.vim/bundle
+git clone https://github.com/gmarik/Vundle.vim ~/.vim/bundle/Vundle.vim

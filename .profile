@@ -23,7 +23,7 @@
     export LC_ALL=en_US.UTF-8
     export EDITOR=vim
     export XDG_CONFIG_HOME=~/.config
-    export PATH=~/.local/bin:$PATH
+    export PATH=~/.bin:~/.local/bin:$PATH
 
 # Aliases
 
@@ -33,16 +33,10 @@
     alias 'l'='ls -l'
     alias 'la'='ls -la'
     alias 'lar'='ls -laR'
-    alias 'getvundle'='mkdir -p ~/.vim/bundle && git clone https://github.com/gmarik/Vundle.vim ~/.vim/bundle/Vundle.vim'
-    alias 'fixkb'='setxkbmap -layout "us,ru" -option "grp:alt_shift_toggle"'
 
     # Wacom
     alias 'wactouchon'='xsetwacom --set `xsetwacom list | grep touch | grep -oP id:\ [0-9]\+ | grep -oP [0-9]\+` Touch on'
     alias 'wactouchoff'='xsetwacom --set `xsetwacom list | grep touch | grep -oP id:\ [0-9]\+ | grep -oP [0-9]\+` Touch off'
-
-    # Mounts
-    alias 'mountn2o'='mkdir -p ~/NitrousIO && sshfs action@euw1.actionbox.io:workspace ~/NitrousIO -p 17355'
-    alias 'umountn2o'='fusermount -u ~/NitrousIO'
 
     # Audio
     alias 'snd_default'='rm ~/.asoundrc'

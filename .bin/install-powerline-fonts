@@ -1,0 +1,10 @@
+#!/usr/bin/sh
+
+set -e
+
+DIR=/tmp/powerline-fonts-$(date +%s)
+git clone https://github.com/powerline/fonts $DIR
+cd $DIR
+./install.sh
+cd $OLDPWD
+rm -rf $DIR
