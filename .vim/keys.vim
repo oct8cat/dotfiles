@@ -12,3 +12,4 @@ endif
 nmap <Leader>w :w<CR>
 nmap <Leader>be :MBEToggle<CR>
 nmap <Leader>R :set ft=rest<CR>
+nmap <Leader>m :make<CR>
