@@ -173,6 +173,9 @@ mytasklist.buttons = awful.util.table.join(
 --batterywidgettimer:connect_signal("timeout", onTimeout)
 --batterywidgettimer:start()
 
+whoami = wibox.widget.textbox()
+whoami:set_text(" " .. os.getenv('USER') .. " ")
+
 for s = 1, screen.count() do
     -- Create a promptbox for each screen
     mypromptbox[s] = awful.widget.prompt()
@@ -201,6 +204,7 @@ for s = 1, screen.count() do
 
     -- Widgets that are aligned to the right
     local right_layout = wibox.layout.fixed.horizontal()
+    right_layout:add(whoami)
     if s == 1 then right_layout:add(wibox.widget.systray()) end
     right_layout:add(mytextclock)
     --right_layout:add(batterywidget)
