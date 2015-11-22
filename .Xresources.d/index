@@ -1,5 +1,4 @@
-#define colors "colors/base16-mocha.dark.xresources"
-! #define colors "colors/base16-mocha.light.xresources"
+#define colors "colors/base16-solarized.dark.xresources"
 
 #include "xft"
 #include "font"

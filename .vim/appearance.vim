@@ -13,4 +13,4 @@ set ruler
 set nowrap
 set background=dark
 set colorcolumn=80,100
-colorscheme base16-mocha
+colorscheme base16-solarized
