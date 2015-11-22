@@ -31,7 +31,6 @@ $(pfx)/.vim/bundle/Vundle.vim: $(pfx)/.vim
 	cd $(@D) && git clone https://github.com/gmarik/Vundle.vim Vundle.vim
 	#vim +BundleInstall +qa
 
-
 $(pfx)/%:
 	@mkdir -p $(@D)
 	cd $(@D) && ln -s $(pwd)/$*
@@ -45,4 +44,4 @@ full-clean: clean
 		$(pwd)/.fonts/powerline \
 		$(pwd)/.vim/bundle
 
-:PHONY: all clean
+:PHONY: all clean full-clean
