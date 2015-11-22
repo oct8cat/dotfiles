@@ -44,4 +44,4 @@ full-clean: clean
 		$(pwd)/.fonts/powerline \
 		$(pwd)/.vim/bundle
 
-:PHONY: all clean full-clean
+.PHONY: all clean full-clean
