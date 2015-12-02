@@ -9,5 +9,7 @@ set mouse=a
 set mousehide
 set foldmethod=indent
 set eol
+set exrc
 
 let g:syntastic_javascript_checkers = ['eslint']
+let g:ctrlp_cmd = 'CtrlP .'
