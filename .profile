@@ -58,5 +58,5 @@
     [ -f ~/.profile.local ] && . ~/.profile.local
 
 # NVM
-    export NVM_DIR="/home/oct8cat/.nvm"
+    export NVM_DIR="$HOME/.nvm"
     [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
