@@ -9,6 +9,7 @@ src := \
 	$(pfx)/.config/fontconfig \
 	$(pfx)/.fonts \
 	$(pfx)/.fonts/powerline \
+	$(pfx)/.profile.d \
 	$(pfx)/.profile \
 	$(pfx)/.vim \
 	$(pfx)/.vim/bundle/Vundle.vim \
