@@ -33,3 +33,20 @@ snippet mit Mocha `it`
 	it('Should ${1:work}.', function (${2}) {
 		${0}
 	})
+snippet wp Webpack configuration
+	module.exports = {
+		entry: {
+			main: './src/main.js',
+		},
+		output: {
+			path: './public',
+			filename: './js/[name].js',
+		},
+		module: {
+			loaders: [
+				{test: /src\/.*\.js/, loader: 'babel', query: {presets: ['stage-0', 'es2015']}},
+				{test: /src\/.*\.hbs/, loader: 'handlebars'},
+			],
+		},
+		devtool: 'source-map',
+	}
