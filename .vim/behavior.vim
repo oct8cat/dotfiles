@@ -5,6 +5,7 @@ set incsearch
 set hlsearch
 set noswapfile
 set nobackup
+set nowritebackup
 set mouse=a
 set mousehide
 set foldmethod=indent

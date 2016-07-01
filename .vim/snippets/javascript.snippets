@@ -16,7 +16,11 @@ snippet ifm Multiline "if".
 		${0}
 	}
 snippet def RequireJS module definition.
-	define(['${1}'], function (${2}) { 'use strict';
+	define([
+		'${1}',
+	], function (
+		${2}
+	) { 'use strict';
 		${0}
 	})
 snippet sch Mongoose schema definition.
