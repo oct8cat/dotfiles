@@ -4,9 +4,7 @@ pwd ?= $(PWD)
 src := \
 	$(pfx)/.Xresources.d \
 	$(pfx)/.Xresources.d/colors \
-	$(pfx)/.bin \
 	$(pfx)/.config/awesome \
-	$(pfx)/.config/fontconfig \
 	$(pfx)/.profile.d \
 	$(pfx)/.profile \
 	$(pfx)/.vim \

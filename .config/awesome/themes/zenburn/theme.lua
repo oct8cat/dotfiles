@@ -12,7 +12,7 @@ theme.wallpaper = home .. "/.wallpaper"
 -- }}}
 
 -- {{{ Styles
-theme.font      = "Ubuntu bold 10"
+theme.font      = "Droid Sans Bold 10"
 
 -- {{{ Colors
 theme.fg_normal = "#DCDCCC"
