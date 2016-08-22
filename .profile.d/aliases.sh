@@ -4,6 +4,7 @@ alias 'ls'='ls --color=auto'
 alias 'l'='ls -l'
 alias 'la'='ls -la'
 alias 'lar'='ls -laR'
+alias 'grep'='grep --color=auto'
 
 # Wacom
 alias 'wactouchon'='xsetwacom --set `xsetwacom list | grep touch | grep -oP id:\ [0-9]\+ | grep -oP [0-9]\+` Touch on'
