@@ -8,6 +8,7 @@ Bundle 'gmarik/Vundle.vim'
 
 Bundle 'marcweber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
+Bundle 'tpope/vim-dispatch'
 
 Bundle 'Raimondi/delimitMate'
 Bundle 'digitaltoad/vim-jade'
@@ -25,5 +26,6 @@ Bundle 'mattn/emmet-vim'
 Bundle 'diepm/vim-rest-console'
 Bundle 'tpope/vim-surround'
 Bundle 'ctrlpvim/ctrlp.vim'
+Bundle 'janko-m/vim-test'
 
 call vundle#end()
