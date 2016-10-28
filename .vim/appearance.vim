@@ -12,4 +12,7 @@ set ruler
 set nowrap
 set background=dark
 set colorcolumn=80,100
-colorscheme base16-chalk
+try
+    colorscheme base16-chalk
+catch 
+endtry

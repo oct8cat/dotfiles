@@ -1,39 +1,39 @@
-pfx ?= $(HOME)
-pwd ?= $(PWD)
+prefix ?= $(HOME)
+dotfiles ?= $(PWD)
 
-src := \
-	$(pfx)/.Xresources.d \
-	$(pfx)/.Xresources.d/colors \
-	$(pfx)/.config/awesome \
-	$(pfx)/.profile.d \
-	$(pfx)/.profile \
-	$(pfx)/.vim \
-	$(pfx)/.vim/bundle/Vundle.vim \
-	$(pfx)/.vimrc \
-	$(pfx)/.wallpaper \
-	$(pfx)/.xinitrc
+targets := \
+	$(prefix)/.Xresources.d \
+	$(prefix)/.Xresources.d/colors \
+	$(prefix)/.config/awesome \
+	$(prefix)/.profile.d \
+	$(prefix)/.profile \
+	$(prefix)/.vimrc \
+	$(prefix)/.vim \
+	$(prefix)/.vim/bundle/Vundle.vim \
+	$(prefix)/.wallpaper \
+	$(prefix)/.xinitrc
 
-all: $(src)
+all: $(targets)
 
-$(pfx)/.Xresources.d/colors: $(pfx)/.Xresources.d
+$(prefix)/.Xresources.d/colors: $(prefix)/.Xresources.d
 	@mkdir -p $(@D)
 	cd $(@D) && git clone https://github.com/chriskempson/base16-xresources colors
 
-$(pfx)/.vim/bundle/Vundle.vim: $(pfx)/.vim
+$(prefix)/.vim/bundle/Vundle.vim: $(prefix)/.vim
 	@mkdir -p $(@D)
 	cd $(@D) && git clone https://github.com/gmarik/Vundle.vim Vundle.vim
-	#vim +BundleInstall +qa
+	vim +BundleInstall +qa
 
-$(pfx)/%:
+$(prefix)/%:
 	@mkdir -p $(@D)
-	cd $(@D) && ln -s $(pwd)/$*
+	cd $(@D) && ln -s $(dotfiles)/$*
 
 clean:
-	rm -rf $(src)
+	rm -rf $(targets)
 
 full-clean: clean
 	rm -rf \
-		$(pwd)/.Xresources.d/colors \
-		$(pwd)/.vim/bundle
+		$(dotfiles)/.Xresources.d/colors \
+		$(dotfiles)/.vim/bundle
 
 .PHONY: all clean full-clean
