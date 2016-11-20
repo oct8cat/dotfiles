@@ -1,4 +1,4 @@
-#define colors "colors/xresources/base16-chalk.Xresources"
+#define colors "colors/xresources/base16-solarized-dark.Xresources"
 
 #include "xft"
 #include "font"

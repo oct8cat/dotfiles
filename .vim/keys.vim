@@ -5,3 +5,4 @@ nmap <F5> :bprev<CR>
 nmap <F6> :bnext<CR>
 nmap <Leader>/ :nohlsearch<CR>
 nmap <Leader>w :w<CR>
+nmap ,t :TestNearest<CR>

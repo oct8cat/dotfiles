@@ -2,14 +2,14 @@ prefix ?= $(HOME)
 dotfiles ?= $(PWD)
 
 targets := \
-	$(prefix)/.Xresources.d \
 	$(prefix)/.Xresources.d/colors \
+	$(prefix)/.Xresources.d \
 	$(prefix)/.config/awesome \
 	$(prefix)/.profile.d \
 	$(prefix)/.profile \
 	$(prefix)/.vimrc \
-	$(prefix)/.vim \
 	$(prefix)/.vim/bundle/Vundle.vim \
+	$(prefix)/.vim \
 	$(prefix)/.wallpaper \
 	$(prefix)/.xinitrc
 
@@ -30,10 +30,5 @@ $(prefix)/%:
 
 clean:
 	rm -rf $(targets)
-
-full-clean: clean
-	rm -rf \
-		$(dotfiles)/.Xresources.d/colors \
-		$(dotfiles)/.vim/bundle
 
 .PHONY: all clean full-clean
