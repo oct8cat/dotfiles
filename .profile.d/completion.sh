@@ -1,2 +1,0 @@
-BASH_COMPLETION=/etc/bash_completion
-[ -r $BASH_COMPLETION ] && . $BASH_COMPLETION

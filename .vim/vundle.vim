@@ -29,5 +29,6 @@ Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'janko-m/vim-test'
 Bundle 'fatih/vim-go'
 Bundle 'mxw/vim-jsx'
+Bundle 'robu3/vimongous'
 
 call vundle#end()
