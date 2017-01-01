@@ -1,0 +1,13 @@
+#include colors/xresources/base16-solarized-dark.Xresources
+*fading: 50
+*font: xft:Meslo LG S for Powerline:size=14
+Xft.antialias: true
+Xft.autohint: false
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcdlight
+Xft.rgba: rgb
+URxvt.loginShell: true
+URxvt.scrollBar: false
+URxvt.perl-ext-common: default,matcher,searchable-scrollback,tabbedex
+URxvt.tabbed.autohide: true
