@@ -1,2 +1,2 @@
-xrdb -merge ~/.Xresources.d/index
+xrdb -merge ~/.Xresources
 exec dbus-launch --exit-with-session awesome
