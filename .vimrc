@@ -63,17 +63,6 @@ set exrc
 set formatoptions+=j
 
 "appearance
-if has('gui_running')
-    set guioptions-=r
-    set guioptions-=L
-    set guioptions-=T
-    set guioptions-=m
-endif
-if has('gui_macvim')
-    set guifont=Meslo\ LG\ S\ for\ Powerline:h18
-else 
-    set guifont=Meslo\ LG\ S\ for\ Powerline\ 13
-endif
 set showtabline=1
 set showcmd
 set showmode
