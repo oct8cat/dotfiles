@@ -1,5 +1,5 @@
 *fading: 50
-*font: xft:Meslo LG S for Powerline:size=13
+*font: xft:Droid Sans Mono:size=12
 Xft.antialias: true
 Xft.autohint: false
 Xft.hinting: true
