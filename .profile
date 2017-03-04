@@ -23,6 +23,8 @@ alias 'gd'='git diff'
 alias 'gdc'='git diff --cached'
 alias 'gc'='git commit'
 alias 'gca'='git commit --amend'
+alias 'lvim'='vim -g -c "colorscheme base16-solarized-light"'
+alias 'dvim'='vim -g -c "colorscheme base16-solarized-dark"'
 
 [ -f ~/.profile.local ] && . ~/.profile.local
 
