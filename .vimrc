@@ -4,30 +4,28 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Bundle 'gmarik/Vundle.vim'
-Bundle 'marcweber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle 'tpope/vim-dispatch'
-Bundle 'Raimondi/delimitMate'
-Bundle 'digitaltoad/vim-jade'
-Bundle 'fholgado/minibufexpl.vim'
-Bundle 'garbas/vim-snipmate'
-Bundle 'jelera/vim-javascript-syntax'
-Bundle 'pangloss/vim-javascript'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-fugitive'
-Bundle 'vim-airline/vim-airline'
-Bundle 'chriskempson/base16-vim'
-Bundle 'mattn/emmet-vim'
-Bundle 'diepm/vim-rest-console'
-Bundle 'tpope/vim-surround'
-Bundle 'ctrlpvim/ctrlp.vim'
-Bundle 'janko-m/vim-test'
-Bundle 'fatih/vim-go'
-Bundle 'mxw/vim-jsx'
-Bundle 'robu3/vimongous'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'marcweber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'tpope/vim-dispatch'
+Plugin 'Raimondi/delimitMate'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'fholgado/minibufexpl.vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'pangloss/vim-javascript'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-fugitive'
+Plugin 'vim-airline/vim-airline'
+Plugin 'chriskempson/base16-vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'diepm/vim-rest-console'
+Plugin 'tpope/vim-surround'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'janko-m/vim-test'
+Plugin 'fatih/vim-go'
+Plugin 'mxw/vim-jsx'
 
 call vundle#end()
 
@@ -35,16 +33,13 @@ filetype plugin on
 filetype plugin indent on
 syntax on
 
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_jsx_checkers = ['eslint']
-let g:syntastic_jsx_checkers = ['eslint']
-let g:syntastic_go_checkers =['go']
+let g:airline_powerline_fonts = 1
+let g:jsx_ext_required = 0
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:airline_powerline_fonts = 1
-let g:jsx_ext_required = 0
+let g:syntastic_javascript_checkers = ['standard']
 
 "behavior
 set nocompatible
@@ -60,7 +55,6 @@ set mousehide
 set foldmethod=indent
 set eol
 set exrc
-set formatoptions+=j
 
 "appearance
 set showtabline=1
@@ -94,7 +88,3 @@ nmap <Leader>/ :nohlsearch<CR>
 nmap <Leader>w :w<CR>
 nmap ,t :TestNearest<CR>
 nmap ,y :TestFile<CR>
-
-"autocmd
-autocmd FileType javascript setl omnifunc=javascriptcomplete#CompleteJS
-autocmd BufRead,BufNewFile *.hbs setl filetype=html

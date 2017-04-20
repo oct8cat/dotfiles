@@ -1,5 +1,5 @@
 *fading: 50
-*font: xft:Droid Sans Mono:size=12
+*font: xft:Roboto Mono for Powerline:size=14
 Xft.antialias: true
 Xft.autohint: false
 Xft.hinting: true

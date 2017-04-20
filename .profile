@@ -7,8 +7,7 @@ export LANGUAGE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export EDITOR=vim
 export XDG_CONFIG_HOME=~/.config
-export PATH=~/d/google-cloud-sdk/bin:~/.local/bin:~/.bin:$PATH
-export GOPATH=~/c/go
+export PATH=~/.local/bin:~/.bin:$PATH
 
 [ -f ~/.profile.$(uname) ] && . ~/.profile.$(uname)
 
@@ -30,4 +29,3 @@ alias 'dvim'='vim -g -c "colorscheme base16-solarized-dark"'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-

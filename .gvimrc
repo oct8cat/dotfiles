@@ -4,9 +4,9 @@ set guioptions-=T
 set guioptions-=m
 
 if has('gui_macvim')
-    set guifont=Meslo\ LG\ S\ for\ Powerline:h18
+    set guifont=Roboto\ Mono\ for\ Powerline:h14
 else 
-    set guifont=Droid\ Sans\ Mono\ 12
+    set guifont=Roboto\ Mono\ for\ Powerline\ 14
 endif
 
 try
