@@ -55,6 +55,7 @@ set mousehide
 set foldmethod=indent
 set eol
 set exrc
+set equalprg=standard\ --fix\ --stdin\ 2\>/dev/null\|\|true
 
 "appearance
 set showtabline=1
