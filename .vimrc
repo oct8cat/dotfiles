@@ -66,10 +66,19 @@ set ruler
 set nowrap
 set background=dark
 set colorcolumn=80,100
+if has('gui_running')
+  set guioptions=aegit
+  if has('gui_macvim')
+    set guifont=Roboto\ Mono\ for\ Powerline:h18
+  else
+    set guifont=Roboto\ Mono\ for\ Powerline\ 14
+  endif
+endif
 try
     colorscheme base16-solarized-dark
 catch 
 endtry
+hi Comment cterm=italic gui=italic
 
 "intendation
 set autoindent
