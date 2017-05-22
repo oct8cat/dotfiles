@@ -18,14 +18,13 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
-Plugin 'chriskempson/base16-vim'
 Plugin 'mattn/emmet-vim'
-Plugin 'diepm/vim-rest-console'
 Plugin 'tpope/vim-surround'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'janko-m/vim-test'
-Plugin 'fatih/vim-go'
 Plugin 'mxw/vim-jsx'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'jparise/vim-graphql'
 
 call vundle#end()
 
@@ -64,21 +63,20 @@ set showmode
 set number
 set ruler
 set nowrap
-set background=dark
 set colorcolumn=80,100
 if has('gui_running')
   set guioptions=aegit
   if has('gui_macvim')
-    set guifont=Roboto\ Mono\ for\ Powerline:h18
+    set guifont=Roboto\ Mono\ Light\ for\ Powerline:h16
   else
     set guifont=Roboto\ Mono\ for\ Powerline\ 14
   endif
 endif
+set background=dark
 try
-    colorscheme base16-solarized-dark
+    colorscheme solarized
 catch 
 endtry
-hi Comment cterm=italic gui=italic
 
 "intendation
 set autoindent
