@@ -54,7 +54,6 @@ set mousehide
 set foldmethod=indent
 set eol
 set exrc
-set equalprg=standard\ --fix\ --stdin\ 2\>/dev/null\|\|true
 
 "appearance
 set showtabline=1
@@ -82,9 +81,9 @@ endtry
 set autoindent
 set smartindent
 set expandtab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 
 "keys
 map <F2> :NERDTreeToggle<CR>
@@ -96,3 +95,8 @@ nmap <Leader>/ :nohlsearch<CR>
 nmap <Leader>w :w<CR>
 nmap ,t :TestNearest<CR>
 nmap ,y :TestFile<CR>
+
+"autocommands
+augroup oct8cat
+au oct8cat BufEnter *.js :setl makeprg=npm\ run
+au oct8cat BufEnter *.js :setl formatprg=standard\ --stdin\ --fix\ 2>/dev/null\|\|true

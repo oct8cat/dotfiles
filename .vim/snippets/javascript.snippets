@@ -1,5 +1,5 @@
 snippet f function
-	function(${1}) {
+	function (${1}) {
 		${0}
 	}
 snippet r require
@@ -8,3 +8,17 @@ snippet h hashbang
 	#!/usr/bin/env node
 snippet c const
 	const ${1:c} = ${0}
+snippet m module.exports
+	module.exports = {
+		${0}
+	}
+snippet w webpack.config.js
+	const path = require('path')
+
+	module.exports = {
+		entry: './src/index.js',
+		output: {
+			path: path.resolve(__dirname, 'www'),
+			filename: 'index.js'
+		}
+	}
