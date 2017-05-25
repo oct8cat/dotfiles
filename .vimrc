@@ -95,6 +95,7 @@ nmap <Leader>/ :nohlsearch<CR>
 nmap <Leader>w :w<CR>
 nmap ,t :TestNearest<CR>
 nmap ,y :TestFile<CR>
+nmap ,f ggVGgq\|:w<CR>
 
 "autocommands
 augroup oct8cat
