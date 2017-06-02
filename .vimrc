@@ -10,7 +10,6 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'tpope/vim-dispatch'
 Plugin 'Raimondi/delimitMate'
 Plugin 'digitaltoad/vim-jade'
-Plugin 'fholgado/minibufexpl.vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/nerdcommenter'
@@ -36,7 +35,7 @@ let g:airline_powerline_fonts = 1
 let g:jsx_ext_required = 0
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['standard']
 let g:NERDSpaceDelims = 1
