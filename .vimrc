@@ -38,6 +38,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['standard']
+let g:syntastic_javascript_jsx_checkers = ['standard']
 let g:NERDSpaceDelims = 1
 let g:user_emmet_settings = {'javascript.jsx': {'extends': 'jsx', 'quote_char': "'"}}
 
