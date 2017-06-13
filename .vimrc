@@ -14,7 +14,6 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'mattn/emmet-vim'
@@ -24,6 +23,7 @@ Plugin 'janko-m/vim-test'
 Plugin 'mxw/vim-jsx'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'jparise/vim-graphql'
+Plugin 'w0rp/ale'
 
 call vundle#end()
 
@@ -33,14 +33,11 @@ syntax on
 
 let g:airline_powerline_fonts = 1
 let g:jsx_ext_required = 0
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers = ['standard']
-let g:syntastic_javascript_jsx_checkers = ['standard']
 let g:NERDSpaceDelims = 1
 let g:user_emmet_settings = {'javascript.jsx': {'extends': 'jsx', 'quote_char': "'"}}
+let g:ale_set_loclist = 0
+let g:ale_set_quickfix = 1
+
 
 "behavior
 set nocompatible
