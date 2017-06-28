@@ -95,8 +95,3 @@ nmap <Leader>w :w<CR>
 nmap ,t :TestNearest<CR>
 nmap ,y :TestFile<CR>
 nmap ,f ggVGgq\|:w<CR>
-
-"autocommands
-augroup oct8cat
-au oct8cat BufEnter *.js :setl makeprg=npm\ run
-au oct8cat BufEnter *.js :setl formatprg=standard\ --stdin\ --fix\ 2>/dev/null\|\|true
