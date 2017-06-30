@@ -21,7 +21,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'janko-m/vim-test'
 Plugin 'mxw/vim-jsx'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'chriskempson/base16-vim'
 Plugin 'jparise/vim-graphql'
 Plugin 'w0rp/ale'
 
@@ -72,7 +72,7 @@ if has('gui_running')
 endif
 set background=dark
 try
-    colorscheme solarized
+    colorscheme base16-default-dark
 catch 
 endtry
 
