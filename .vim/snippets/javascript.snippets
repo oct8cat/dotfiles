@@ -18,11 +18,19 @@ snippet m module.exports
 	}
 snippet w webpack.config.js
 	const path = require('path')
+	const src = path.resolve(__dirname, 'src')
+	const out = path.resolve(__dirname, 'out')
 
 	module.exports = {
-		entry: './src/index.js',
+		entry: src,
 		output: {
-			path: path.resolve(__dirname, 'www'),
+			path: out,
 			filename: 'index.js'
+		},
+		resolve: {
+			modules: ['src', 'node_modules']
+		},
+		devServer: {
+			contentBase: out
 		}
 	}
