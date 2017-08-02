@@ -10,6 +10,7 @@ URxvt.loginShell: true
 URxvt.scrollBar: false
 URxvt.perl-ext-common: default,matcher,searchable-scrollback,tabbedex
 URxvt.tabbed.autohide: true
+URxvt.letterSpace: -2
 
 ! Base16 Default Dark
 ! Scheme: Chris Kempson (http://chriskempson.com)

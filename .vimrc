@@ -63,7 +63,7 @@ set ruler
 set nowrap
 set colorcolumn=80,100
 if has('gui_running')
-  set guioptions=aegit
+  set guioptions=aegitm
   if has('gui_macvim')
     set guifont=Roboto\ Mono\ Light\ for\ Powerline:h16
   else
