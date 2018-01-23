@@ -24,6 +24,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'chriskempson/base16-vim'
 Plugin 'jparise/vim-graphql'
 Plugin 'w0rp/ale'
+Plugin 'morhetz/gruvbox'
 
 call vundle#end()
 
@@ -40,6 +41,7 @@ let g:ale_set_quickfix = 1
 let g:NERDTreeIgnore = ['node_modules$', '__generated__$']
 let g:ctrlp_custom_ignore = join(g:NERDTreeIgnore, '\|')
 let g:ale_linters = {'javascript': ['standard']}
+let g:gruvbox_contrast_dark = 'medium'
 
 "behavior
 set nocompatible
@@ -55,6 +57,7 @@ set mousehide
 set foldmethod=indent
 set eol
 set exrc
+set visualbell t_vb=
 
 "appearance
 set showtabline=1
@@ -74,7 +77,7 @@ if has('gui_running')
 endif
 set background=dark
 try
-    colorscheme base16-default-dark
+    colorscheme gruvbox
 catch 
 endtry
 
@@ -88,8 +91,8 @@ set shiftwidth=2
 
 "keys
 map <F2> :NERDTreeToggle<CR>
-nmap <F3> :lprev<CR>
-nmap <F4> :lnext<CR>
+nmap <F3> :cprev<CR>
+nmap <F4> :cnext<CR>
 nmap <F5> :bprev<CR>
 nmap <F6> :bnext<CR>
 nmap <Leader>/ :nohlsearch<CR>
@@ -97,3 +100,4 @@ nmap <Leader>w :w<CR>
 nmap ,t :TestNearest<CR>
 nmap ,y :TestFile<CR>
 nmap ,f ggVGgq\|:w<CR>
+nmap ,g :lgrep -Ri --exclude-dir node_modules --exclude-dir www 
