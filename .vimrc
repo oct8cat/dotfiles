@@ -36,12 +36,14 @@ let g:airline_powerline_fonts = 1
 let g:jsx_ext_required = 0
 let g:NERDSpaceDelims = 1
 let g:user_emmet_settings = {'javascript.jsx': {'extends': 'jsx', 'quote_char': "'"}}
-let g:ale_set_loclist = 0
-let g:ale_set_quickfix = 1
+" let g:ale_set_loclist = 0
+" let g:ale_set_quickfix = 1
 let g:NERDTreeIgnore = ['node_modules$', '__generated__$']
 let g:ctrlp_custom_ignore = join(g:NERDTreeIgnore, '\|')
 let g:ale_linters = {'javascript': ['standard']}
 let g:gruvbox_contrast_dark = 'medium'
+let g:test#strategy = 'dispatch'
+let g:test#javascript#mocha#options = '-t 10000'
 
 "behavior
 set nocompatible
