@@ -1,5 +1,5 @@
 *fading: 20
-*font: xft:Fira Mono for Powerline:size=14:medium
+*font: xft:Fira Mono for Powerline:Medium:size=14,xft:Source Code Pro for Powerline
 Xft.antialias: true
 Xft.autohint: false
 Xft.hinting: true
@@ -8,7 +8,6 @@ Xft.lcdfilter: lcdlight
 Xft.rgba: rgb
 URxvt.loginShell: true
 URxvt.scrollBar: false
-! URxvt.letterSpace: -2
 URxvt.perl-ext-common: default,matcher,searchable-scrollback,tabbedex
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
