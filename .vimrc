@@ -41,7 +41,7 @@ let g:user_emmet_settings = {'javascript.jsx': {'extends': 'jsx', 'quote_char': 
 let g:NERDTreeIgnore = ['node_modules$', '__generated__$']
 let g:ctrlp_custom_ignore = join(g:NERDTreeIgnore, '\|')
 let g:ale_linters = {'javascript': ['standard']}
-let g:gruvbox_contrast_dark = 'medium'
+let g:gruvbox_contrast_dark = 'hard'
 let g:test#strategy = 'dispatch'
 let g:test#javascript#mocha#options = '-t 10000'
 
@@ -74,7 +74,7 @@ if has('gui_running')
   if has('gui_macvim')
     set guifont=Roboto\ Mono\ Light\ for\ Powerline:h16
   else
-    set guifont=Roboto\ Mono\ for\ Powerline\ 13
+    set guifont=Fira\ Mono\ for\ Powerline\ Medium\ 14
   endif
 endif
 set background=dark
