@@ -36,14 +36,16 @@ let g:airline_powerline_fonts = 1
 let g:jsx_ext_required = 0
 let g:NERDSpaceDelims = 1
 let g:user_emmet_settings = {'javascript.jsx': {'extends': 'jsx', 'quote_char': "'"}}
-" let g:ale_set_loclist = 0
-" let g:ale_set_quickfix = 1
 let g:NERDTreeIgnore = ['node_modules$', '__generated__$']
 let g:ctrlp_custom_ignore = join(g:NERDTreeIgnore, '\|')
 let g:ale_linters = {'javascript': ['standard']}
+let g:ale_fixers = {'javascript': ['prettier']}
+let g:ale_javascript_prettier_options = '--no-semi --single-quote'
+let g:ale_fix_on_save = 1
 let g:gruvbox_contrast_dark = 'hard'
 let g:test#strategy = 'dispatch'
 let g:test#javascript#mocha#options = '-t 10000'
+let g:javascript_opfirst = '^\C\%([<>=,?^%|/&]\|\([-:+]\)\1\@!\|\*\+\|!=\|in\%(stanceof\)\=\>\)'
 
 "behavior
 set nocompatible
@@ -60,6 +62,7 @@ set foldmethod=indent
 set eol
 set exrc
 set visualbell t_vb=
+set termguicolors
 
 "appearance
 set showtabline=1
@@ -72,7 +75,7 @@ set colorcolumn=80,100
 if has('gui_running')
   set guioptions=aegitm
   if has('gui_macvim')
-    set guifont=Roboto\ Mono\ Light\ for\ Powerline:h16
+    set guifont=Fira\ Mono\ for\ Powerline:h14
   else
     set guifont=Fira\ Mono\ for\ Powerline\ Medium\ 14
   endif
@@ -101,5 +104,5 @@ nmap <Leader>/ :nohlsearch<CR>
 nmap <Leader>w :w<CR>
 nmap ,t :TestNearest<CR>
 nmap ,y :TestFile<CR>
-nmap ,f ggVGgq\|:w<CR>
+nmap ,f :ALEFix<CR>
 nmap ,g :lgrep -Ri --exclude-dir node_modules --exclude-dir www 
