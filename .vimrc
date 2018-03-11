@@ -40,7 +40,7 @@ let g:NERDTreeIgnore = ['node_modules$', '__generated__$']
 let g:ctrlp_custom_ignore = join(g:NERDTreeIgnore, '\|')
 let g:ale_linters = {'javascript': ['standard']}
 let g:ale_fixers = {'javascript': ['prettier']}
-let g:ale_javascript_prettier_options = '--no-semi --single-quote'
+let g:ale_javascript_prettier_options = '--no-semi --single-quote --arrow-parens=always'
 let g:ale_fix_on_save = 1
 let g:gruvbox_contrast_dark = 'hard'
 let g:test#strategy = 'dispatch'
