@@ -45,7 +45,6 @@ let g:ale_fix_on_save = 1
 let g:gruvbox_contrast_dark = 'hard'
 let g:test#strategy = 'dispatch'
 let g:test#javascript#mocha#options = '-t 10000'
-let g:javascript_opfirst = '^\C\%([<>=,?^%|/&]\|\([-:+]\)\1\@!\|\*\+\|!=\|in\%(stanceof\)\=\>\)'
 
 "behavior
 set nocompatible
