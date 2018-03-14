@@ -25,6 +25,7 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'jparise/vim-graphql'
 Plugin 'w0rp/ale'
 Plugin 'morhetz/gruvbox'
+Plugin 'skywind3000/asyncrun.vim'
 
 call vundle#end()
 
@@ -38,12 +39,12 @@ let g:NERDSpaceDelims = 1
 let g:user_emmet_settings = {'javascript.jsx': {'extends': 'jsx', 'quote_char': "'"}}
 let g:NERDTreeIgnore = ['node_modules$', '__generated__$']
 let g:ctrlp_custom_ignore = join(g:NERDTreeIgnore, '\|')
-let g:ale_linters = {'javascript': ['eslint']}
+let g:ale_linters = {'javascript': ['standard']}
 let g:ale_fixers = {'javascript': ['prettier'], 'json': ['prettier']}
 let g:ale_javascript_prettier_options = '--no-semi --single-quote --arrow-parens=always'
 let g:ale_fix_on_save = 1
 let g:gruvbox_contrast_dark = 'hard'
-let g:test#strategy = 'dispatch'
+let g:test#strategy = 'asyncrun'
 let g:test#javascript#mocha#options = '-t 10000'
 
 "behavior
