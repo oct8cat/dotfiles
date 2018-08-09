@@ -96,13 +96,10 @@ set shiftwidth=2
 
 "keys
 map <F2> :NERDTreeToggle<CR>
-nmap <F3> :cprev<CR>
-nmap <F4> :cnext<CR>
-nmap <F5> :bprev<CR>
-nmap <F6> :bnext<CR>
-nmap <Leader>/ :nohlsearch<CR>
-nmap <Leader>w :w<CR>
+nmap ,w :write<CR>
 nmap ,t :TestNearest<CR>
 nmap ,y :TestFile<CR>
-nmap ,f :ALEFix<CR>
-nmap ,g :lgrep -Ri --exclude-dir node_modules --exclude-dir www 
+nmap ,g :grep -Ri --exclude-dir node_modules 
+nmap ,\ :nohlsearch<CR>
+nmap ,Mn :set makeprg=npm\ run<CR>
+nmap ,d :Make doc<CR>
