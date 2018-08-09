@@ -62,7 +62,7 @@ set foldmethod=indent
 set eol
 set exrc
 set visualbell t_vb=
-set termguicolors
+" set termguicolors
 
 "appearance
 set showtabline=1
